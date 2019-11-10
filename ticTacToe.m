@@ -1,7 +1,11 @@
-%Author: Liam Orr, University of Vermont
-%Class: CS020
-%Tic Tac Toe game
-%HAVE FUN!
+%{
+Author: Liam Orr, University of Vermont
+Class: CS020 Fall 2019
+Assignment: Tic Tac Toe Game 
+Partner: N/A
+lmorr@uvm.edu
+HAVE FUN!
+%}
 clear
 global playerwin playercount compcount drawcount
 clear board win playerwin 
@@ -27,11 +31,11 @@ if firstturn == 0 %if first turn is player's run player turn
      clear i j;
      clc
       clc
-    fprintf(2,'\nThinking.\n');
+    fprintf(2,'\nThinking.\n'); %stylistic element to simulate computer thinking
     pause(.35)
     clc
     fprintf(2,'\nThinking..\n');
-    pause(.35)
+    pause(.35);
     clc
     fprintf(2,'\nThinking...\n');
     pause(.35);
@@ -52,10 +56,10 @@ if nexturn == 0
     clear i j
     clc
     fprintf(2,'\nThinking.\n');
-    pause(.35)
+    pause(.35);
     clc
     fprintf(2,'\nThinking..\n');
-    pause(.35)
+    pause(.35);
     clc
     fprintf(2,'\nThinking...\n');
     pause(.35);
@@ -69,7 +73,7 @@ elseif nexturn == 1
 end
 end
 if playerwin == 1
-    fprintf('\nCongrats! You beat the computer!\n')
+    fprintf('\nCongrats! You beat the computer! The Terminators will have to wait!\n');
     playagain = input('Would you like to play again (y/n)? ','s');
     wincounter;
     if playagain == 'y' 
@@ -81,7 +85,7 @@ if playerwin == 1
     end
    
 elseif playerwin == 0
-    fprintf('\nOh no! You were beaten by the computer!\n')
+    fprintf('\nOh no! You were beaten by the computer! Better luck next time!\n')
     playagain = input('Would you like to play again (y/n)? ','s');
     wincounter;
     if playagain == 'y'
@@ -92,7 +96,7 @@ elseif playerwin == 0
         fprintf(2,'\nThank you for playing Liam''s TicTacToe, enjoy your day!\n\n');
     end
 elseif playerwin == 2
-    fprintf('\nIt''s a draw!\n')
+    fprintf('\nIt''s a draw! Better luck next time!\n');
     playagain = input('Would you like to play again (y/n)? ','s');
     wincounter;
     if playagain == 'y'

@@ -8,7 +8,7 @@ if win == 0
             elseif all(all((board(:,:))))~=0
                 draw = 1;
                 win = 1;
-                playerwin = 2
+                playerwin = 2;
         end
     end
                 

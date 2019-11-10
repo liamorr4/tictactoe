@@ -7,8 +7,8 @@ global board win playerwin
         win = 1;
         playerwin = 1;
     elseif board(3,:)==[1 1 1]
-         win = 1
-        playerwin = 1
+         win = 1;
+        playerwin = 1;
     elseif board(:,1)==[1 1 1]
          win = 1;
         playerwin = 1;

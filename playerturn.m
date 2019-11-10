@@ -1,7 +1,7 @@
-function playerturn(i,j)
+function playerturn
 rr = 5;
-rowcolumn
-global board i j
+rowcolumn;
+global board i j;
 
 dispBoard(board);
 while rr == 5

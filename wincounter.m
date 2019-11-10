@@ -6,6 +6,6 @@ if playerwin == 0
 elseif playerwin == 1
     playercount = playercount + 1;
 elseif playerwin == 2
-    drawcount == drawcount +1;
+    drawcount = drawcount +1;
 end
 end
